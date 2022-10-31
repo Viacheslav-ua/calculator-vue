@@ -1,5 +1,6 @@
 <template>
-  <input class="input" value="123" type="text" />
+  <h4>333</h4>
+  <input class="input" value="333" type="text" />
 </template>
 
 <script>
