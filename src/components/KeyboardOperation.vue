@@ -1,6 +1,7 @@
+<!-- eslint-disable prettier/prettier -->
 <template>
   <div class="keyboard-operation">
-    <key-button v-for="btn in btns" v-bind:key="btn.id">
+    <key-button @click="$store.commit('operations', btn.val)" v-for="btn in btns" v-bind:key="btn.id">
       {{ btn.val }}
     </key-button>
   </div>

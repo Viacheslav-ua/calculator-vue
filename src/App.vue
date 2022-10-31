@@ -9,4 +9,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.kl {
+  margin: 1px;
+}
+</style>

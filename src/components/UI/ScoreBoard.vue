@@ -1,6 +1,5 @@
 <template>
-  <h4>333</h4>
-  <input class="input" value="333" type="text" />
+  <span class="input">{{ $store.state.calc.calculations }}</span>
 </template>
 
 <script>
@@ -11,7 +10,9 @@ export default {
 
 <style scoped>
 .input {
-  width: 80%;
+  width: 75%;
+  height: 20px;
+  background-color: azure;
   border: 2px solid teal;
   border-radius: 5px;
   padding: 10px 15px;

@@ -1,11 +1,8 @@
 import { createStore } from "vuex";
+import { calculationsModule } from "./calculationsModule";
 
 export default createStore({
-  state: {
-    calculations: "0",
+  modules: {
+    calc: calculationsModule,
   },
-  getters: {},
-  mutations: {},
-  actions: {},
-  modules: {},
 });

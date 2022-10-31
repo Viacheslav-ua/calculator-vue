@@ -1,6 +1,7 @@
+<!-- eslint-disable prettier/prettier -->
 <template>
   <div class="keyboard-value">
-    <key-button v-for="btn in btns" v-bind:key="btn.id">
+    <key-button @click="$store.commit('inputValue', btn.val)" v-for="btn in btns" v-bind:key="btn.id">
       {{ btn.val }}
     </key-button>
   </div>
@@ -14,6 +15,11 @@ export default {
     return {
       btns: keyboard.valueKeys,
     };
+  },
+  methods: {
+    clickBtn(event) {
+      console.log(event.target.textContent);
+    },
   },
 };
 </script>
